@@ -6,7 +6,7 @@ public class Exercicio1 {
         if(numeroNatural == 0) {
             return 0;
         }
-        return somarAcumulativamenteRecursivo3(numeroNatural-1);
+        return somarAcumulativamenteRecursivo3(numeroNatural-1) + numeroNatural;
     }
 
     public static void somarAcumulativamenteRecursivo2(int numeroNatural, int soma) {
@@ -41,10 +41,12 @@ public class Exercicio1 {
     public static void main(String[] args) {
         int numeroNatural;
         Scanner sc = new Scanner(System.in);
+        int resultado;
 
         System.out.println("Informe um número natural para realizar a soma acumulativa: ");
         numeroNatural = sc.nextInt();
-        somarAcumulativamenteRecursivo3(numeroNatural);
+        resultado = somarAcumulativamenteRecursivo3(numeroNatural);
+        System.out.println(resultado);
 
     }
 }
